@@ -23,10 +23,9 @@ Ensure you have Python (3.12+ recommended) and Poetry installed.
 
 1.  **Clone the repository (or download the source):**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/mikeusru/reposcribe.git
     cd reposcribe
     ```
-    *(Replace `<repository_url>` if you host this on Git)*
 
 2.  **Install dependencies using Poetry:**
     ```bash
@@ -50,8 +49,7 @@ reposcribe <PROJECT_DIRECTORY> <OUTPUT_FILE> [OPTIONS]
 ### Arguments:
 
 * `PROJECT_DIRECTORY`: Path to the root directory of the project you want to scribe (must contain .gitignore, if used).
-* `OUTPUT_FILE`: Path to the file where the concatenated content will be saved.
-
+* `OUTPUT_FILE` (Optional): Path to the file where the concatenated content will be saved. If omitted, defaults to `./output/{PROJECT_DIRECTORY_NAME}_context.txt` in the current working directory (the `output` directory will be created if needed).
 ### Options:
 
 * `--tree / --no-tree`: Include / Do not include a file tree representation (default: --tree).
@@ -117,3 +115,7 @@ To contribute or modify the tool:
     ```bash
     pytest
     ```
+
+## License
+
+Distributed under the MIT License. 
