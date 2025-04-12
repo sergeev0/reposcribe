@@ -1,3 +1,11 @@
+WHAT I DO
+
+poetry shell
+
+reposcribe '/Users/isergeev/Documents/GitHub/osint-tracker'
+
+
+
 # RepoScribe
 
 A command-line tool to scan a project directory, identify files that are not ignored by `.gitignore` rules, and concatenate their contents into a single text file ("scribe" them). It includes a file tree representation at the start of the output, making it ideal for providing context to Large Language Models (LLMs) or for code reviews.
