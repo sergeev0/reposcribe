@@ -13,3 +13,4 @@ __pycache__/
 
 # Default outputs
 output/
+.DS_Store
